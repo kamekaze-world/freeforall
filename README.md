@@ -24,7 +24,7 @@ p2statetype must be changed to player(map(is_closestplayer)),statetype
 "p2/enemynear/enemy(x)," must be changed to "player(map(is_closestplayer))," as they will all refer to the same thing.
 ```
 
-### You must add this in your systen.def file under [Title Info]:
+### You must add this in your system.def file under [Title Info]:
 ```
 menu.itemname.free = "Free for all"             ;Ikemen feature
 menu.itemname.free.freeforall = "All Human"        ;Ikemen feature
