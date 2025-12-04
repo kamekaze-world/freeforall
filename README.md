@@ -1,7 +1,10 @@
 # GG Isuka mod by Kamekaze 1.0
 email: ilive@kamekaze.world
+
 bsky: kamekaze.world
+
 yt: M.U.G.E.N. Kamekaze	
+
 Commissioned by: @jerry
 
 This mod turns simul into a literal free for all where everyone is an enemy. 
