@@ -15,7 +15,9 @@ Place the zss and lua file in the mods folder.
 ### To turn press "W" or "D". This can be changed in the code to be whatever you want.
 
 ### To update your chars to ensure they are fully compatible you will need to update the following triggers:
-```p2bodydist x must be changed to map(is_enemybdx)
+```
+p2bodydist x must be changed to map(is_enemybdx)
+p2dist x must be changed to map(is_enemydx)
 p2dist y must be changed to map(is_enemydy)
 p2dist z must be changed to map(is_enemydz)
 p2stateno must be changed to player(map(is_closestplayer)),stateno
