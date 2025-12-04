@@ -12,9 +12,9 @@ This mod turns simul into a literal free for all where everyone is an enemy.
 ## To Use
 Place the zss and lua file in the mods folder.
 
-##To turn press "W" or "D". This can be changed in the code to be whatever you want.
+### To turn press "W" or "D". This can be changed in the code to be whatever you want.
 
-##To update your chars to ensure they are fully compatible you will need to update the following triggers:
+### To update your chars to ensure they are fully compatible you will need to update the following triggers:
 ```p2bodydist x must be changed to map(is_enemybdx)
 p2dist y must be changed to map(is_enemydy)
 p2dist z must be changed to map(is_enemydz)
@@ -24,7 +24,7 @@ p2statetype must be changed to player(map(is_closestplayer)),statetype
 "p2/enemynear/enemy(x)," must be changed to "player(map(is_closestplayer))," as they will all refer to the same thing.
 ```
 
-##You must add this in your systen.def file under [Title Info]:
+### You must add this in your systen.def file under [Title Info]:
 ```
 menu.itemname.free = "Free for all"             ;Ikemen feature
 menu.itemname.free.freeforall = "All Human"        ;Ikemen feature
