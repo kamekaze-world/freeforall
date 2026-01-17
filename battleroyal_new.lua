@@ -7,8 +7,8 @@ ffa = {}
 ffa.sd=loadIni('external/mods/def/ffa.def')
 
 main.t_itemname.freeforallcpu= function()
-main.f_playerInput(main.playerInput, 1)
-		main.t_pIn[2] = 1
+	remapInput(main.playerInput, 1)
+	setCommandInputSource(2, 1)
 		--main.lifebar.p1score = true
 		--main.lifebar.p2ailevel = true
 		main.motif.versusscreen = true
@@ -27,7 +27,7 @@ main.f_playerInput(main.playerInput, 1)
 		main.teamMenu[2].single = false
 		main.teamMenu[2].tag = false
 		main.teamMenu[2].turns = false
-		textImgSetText(motif.select_info.title.TextSpriteData, ffa.sd.select_info.title.text.freeforall)
+		textImgSetText(motif.select_info.title.TextSpriteData, ffa.sd.select_info.title.text.freeforallcpu)
 		setGameMode('freeforall')
 		modifyGameOption('Options.Team.PowerShare', 0)
 		hook.run("main.t_itemname")
@@ -51,7 +51,7 @@ main.f_playerInput(main.playerInput, 1)
 		main.teamMenu[2].tag = false
 		main.motif.versusscreen = true
 		main.motif.victoryscreen = true
-		textImgSetText(motif.select_info.title.TextSpriteData, ffa.sd.select_info.title.text.freeforallcpu)
+		textImgSetText(motif.select_info.title.TextSpriteData, ffa.sd.select_info.title.text.freeforall)
 		setGameMode('freeforall')
 		modifyGameOption('Options.Team.PowerShare', 0)
 		hook.run("main.t_itemname")
@@ -60,8 +60,8 @@ main.f_playerInput(main.playerInput, 1)
 	
 		main.t_itemname.freeforallwatch=function()
 		setHomeTeam(1)
-		main.f_playerInput(main.playerInput, 1)
-		main.t_pIn[2] = 1
+		remapInput(main.playerInput, 1)
+		setCommandInputSource(2, 1)
 		main.cpuSide[1] = true
 		--main.lifebar.p1ailevel = true
 		--main.lifebar.p2ailevel = true
