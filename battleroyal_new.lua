@@ -7,7 +7,7 @@ ffa = {}
 ffa.sd=loadIni('external/mods/def/ffa.def')
 
 main.t_itemname.freeforallcpu= function()
-	remapInput(main.playerInput, 1)
+	remapInput(1, getLastInputController())
 	setCommandInputSource(2, 1)
 		--main.lifebar.p1score = true
 		--main.lifebar.p2ailevel = true
@@ -60,7 +60,7 @@ main.t_itemname.freeforallcpu= function()
 	
 		main.t_itemname.freeforallwatch=function()
 		setHomeTeam(1)
-		remapInput(main.playerInput, 1)
+		remapInput(1, getLastInputController())
 		setCommandInputSource(2, 1)
 		main.cpuSide[1] = true
 		--main.lifebar.p1ailevel = true
