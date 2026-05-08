@@ -12,9 +12,14 @@ This mod turns simul into a literal free for all where everyone is an enemy.
 ## To Use
 Place the zss and lua file in the mods folder. 
 
-### If your build is from December 2025 or later
-use the _new.lua and place the **def** folder in the mods folder!!! If it is **NOT** newer than December 2025 use the original .lua file and do **NOT** use the def
+### If your build is from December 2025 or before March 2026
+use the _newpre328.lua and place the **def** folder in the mods folder!!! If it is **NOT** newer than December 2025 use the original .lua file and do **NOT** use the def
 folder.
+
+### If your build is from March 2026 or later
+use the _new328.lua and place the **def** folder in the mods folder!!! If it is **NOT** newer than December 2025 use the original .lua file and do **NOT** use the def
+folder.
+
 
 ### To turn press "W" or "D". This can be changed in the code to be whatever you want.
 
