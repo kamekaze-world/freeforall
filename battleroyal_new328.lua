@@ -11,7 +11,7 @@ main.t_itemname.freeforallcpu= function()
 		remapInput(getLastInputController(), 1)
 		--main.lifebar.p1score = true
 		--main.lifebar.p2ailevel = true
-		main.motif.versusscreen = true
+		main.motif.vsscreen = true
 		main.motif.victoryscreen = true
 		main.orderSelect[1] = false
 		main.orderSelect[2] = false
@@ -49,7 +49,7 @@ main.t_itemname.freeforallcpu= function()
 		main.teamMenu[1].tag = false
 		main.teamMenu[2].simul = true
 		main.teamMenu[2].tag = false
-		main.motif.versusscreen = true
+		main.motif.vsscreen = true
 		main.motif.victoryscreen = true
 		textImgSetText(motif.select_info.title.TextSpriteData, ffa.sd.select_info.title.text.freeforall)
 		setGameMode('freeforall')
@@ -77,7 +77,7 @@ main.t_itemname.freeforallcpu= function()
 		main.teamMenu[2].single = false
 		main.teamMenu[2].tag = false
 		main.teamMenu[2].turns = false
-		main.motif.versusscreen = true
+		main.motif.vsscreen = true
 		main.motif.victoryscreen = true
 		textImgSetText(motif.select_info.title.TextSpriteData, ffa.sd.select_info.title.text.freeforallwatch)
 		setGameMode('freeforall')
