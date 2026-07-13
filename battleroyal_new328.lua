@@ -1,6 +1,14 @@
-local tt = gameOption("Common.States")
-table.insert(tt, "external/mods/kame_isuka.zss")
-modifyGameOption("Common.States", tt)
+if not table.contains(tt, "external/mods/kame_isuka.zss") then
+print('not found')
+    table.insert(tt, "external/mods/kame_isuka.zss")
+    modifyGameOption("Common.States", tt)
+end
+
+if start.localcoopgamemode~=nil then
+	table.insert(start.localcoopgamemode,'freeforall')
+end
+
+
 
 ffa = {}
 
