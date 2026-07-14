@@ -1,4 +1,4 @@
-#GG Isuka mod by Kamekaze 1.0
+#GG Isuka mod by Kamekaze 1.1
 #email: ilive@kamekaze.world
 #bsky: kamekaze.world
 #yt: M.U.G.E.N. Kamekaze	
@@ -64,7 +64,7 @@ let y = 0;
 for i=0;numpartner;1{
 if player($p),alive{
 if (player($p),id = partner($i),id){
-let y = $i;
+let y = $i+1;
 }
 break;
 }
@@ -178,11 +178,12 @@ let np = call nearestplayer();
 call is_setDist($np);
 let nip =call ispartner($np);
 
-	ignoreHitPause if $nip && !map(is_enemydz) && map(is_enemydx) =[-partner($nip),const(size.ground.back),partner($nip),const(size.ground.front)] &&  (map(is_enemydy)=0 ||abs(map(is_enemydy))< partner($nip),const(size.height)*.75)   
+	ignoreHitPause if $nip && !map(is_enemydz) && map(is_enemydx) =[-partner($nip-1),const(size.ground.back),partner($nip-1),const(size.ground.front)] &&  (map(is_enemydy)=0 ||abs(map(is_enemydy))< partner($nip-1),const(size.height)*.75)   
 	{
-	posadd{x:cond(map(is_enemydx)>0,const(size.ground.front)*.25,-const(size.ground.back)*.25);redirectid:partner($nip),id}
+	
+	posadd{x:cond(map(is_enemydx)>0,const(size.ground.front)*.25,-const(size.ground.back)*.25);redirectid:partner($nip-1),id}
 	if statetype!=A{
-	posadd{x:cond(map(is_enemydx)>0,-partner($nip),const(size.ground.front)*.25, -partner($nip),const(size.ground.back)*.25)}
+	posadd{x:cond(map(is_enemydx)>0,-partner($nip-1),const(size.ground.front)*.25, -partner($nip-1),const(size.ground.back)*.25)}
 	}
 	}
 
