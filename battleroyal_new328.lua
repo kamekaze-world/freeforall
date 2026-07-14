@@ -1,3 +1,10 @@
+function table.contains(tbl, val)
+    for _, v in ipairs(tbl) do
+        if v == val then return true end
+    end
+    return false
+end
+
 if not table.contains(tt, "external/mods/kame_isuka.zss") then
 print('not found')
     table.insert(tt, "external/mods/kame_isuka.zss")
