@@ -4,7 +4,7 @@ function table.contains(tbl, val)
     end
     return false
 end
-
+local tt = gameOption("Common.States")
 if not table.contains(tt, "external/mods/kame_isuka.zss") then
 print('not found')
     table.insert(tt, "external/mods/kame_isuka.zss")
@@ -14,7 +14,6 @@ end
 if start.localcoopgamemode~=nil then
 	table.insert(start.localcoopgamemode,'freeforall')
 end
-
 
 
 ffa = {}
